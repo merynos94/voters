@@ -1,0 +1,19 @@
+{
+  "name": "voters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merynos94/voters.git"
+  },
+  "author": "Radosław Mikoś",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merynos94/voters/issues"
+  },
+  "homepage": "https://github.com/merynos94/voters#readme"
+}
