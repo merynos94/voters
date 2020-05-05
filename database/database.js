@@ -1,9 +1,10 @@
 const Sequelize = require("Sequelize")
 const db = {}
 
-const seqelize = new Sequelize("mikos.radoslaw", "mikos.radoslaw", "myca7HaZG3uisql", {
-    host:'ux.up.krakow.pl',
+const seqelize = new Sequelize("voters", "mikos.radoslaw", "myca7HaZG3uisql", {
+    host:'bringup.ddns.net',
     dialect:'mysql',
+    port:'6033'
 })
 
 db.seqelize = seqelize

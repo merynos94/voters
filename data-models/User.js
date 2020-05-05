@@ -18,5 +18,12 @@ module.exports = db.seqelize.define(
         email:{
             type:Sequelize.STRING
         }
+        // ,
+        // tokenReceived:{
+        //     type:Sequelize.BOOLEAN
+        // }
+    },
+    {
+        timestamps:false
     }
 )
