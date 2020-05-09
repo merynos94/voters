@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/merynos94/voters/issues"
   },
-  "homepage": "https://github.com/merynos94/voters#readme"
+  "homepage": "https://github.com/merynos94/voters#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "sequelize": "5.21.7",
+    "bcrypt": "4.0.1",
+    "mysql2": "2.1.0",
+    "mysql": "2.18.1",
+    "body-parser": "1.19.0"
+  }
 }
