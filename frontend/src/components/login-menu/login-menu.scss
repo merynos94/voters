@@ -1,0 +1,111 @@
+.background {
+    width: 742px;
+    height: 1297px;
+  }
+  .side-rectangle {
+    width: 120px;
+    height: 1297px;
+    background-color: #385ca3;
+  }
+  .text-account {
+    width: 18px;
+    height: 290px;
+    font-family: WorkSans;
+    font-size: 0;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6f7f9;
+  }
+  .text-singup {
+    width: 23px;
+    height: 83px;
+    font-family: WorkSans;
+    font-size: 0;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6f7f9;
+  }
+  .text-welcome {
+    width: 368px;
+    height: 30px;
+    font-family: WorkSans;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  .login-text {
+    width: 175px;
+    height: 18px;
+    font-family: WorkSans;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9c9b9b;
+  }
+  .login-line {
+    width: 468px;
+    height: 2px;
+    background-color: #9c9b9b;
+  }
+  .login-button {
+    width: 468px;
+    height: 72px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #274595, #73b3e5);
+  }
+  .login-button-text {
+    width: 66px;
+    height: 14px;
+    font-family: WorkSans;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .reset-text {
+    width: 179px;
+    height: 16px;
+    font-family: WorkSans;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: left;
+    color: #385ca3;
+  }
+  .error-text {
+    width: 180px;
+    height: 17px;
+    font-family: WorkSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #c40046;
+  }
