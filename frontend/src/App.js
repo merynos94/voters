@@ -23,14 +23,7 @@ function App() {
         >
           Learn Reacty
         </a>
-     
 
-
-<div class="menu">
-<a href="#section1">section1</a>
-<a href="#section2">section2</a>
-<a href="#section3">section3</a>
-</div>
 
 <div class="main" id="section1">
 <h2>Section 1</h2>
