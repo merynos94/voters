@@ -7,22 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -37,10 +21,22 @@
   }
 }
 
-
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
 .background-resolution {
-  width: 1920px;
-  height: 1080px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+
 }
 .menu-line-symbole {
   width: 42px;
@@ -183,4 +179,31 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 100vh;
+  background-color: pink;
+}
+
+#section2 {
+  height: 100vh;
+  background-color: yellow;
+}
+#section3 {
+  height: 100vh;
+  background-color: blue;
+}
+.main {
+  margin-left: 100px;
+}
+.menu {
+  position: fixed;
+  background-color: red;
+  width: 100px;
+  height: 100vh;
 }
