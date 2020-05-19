@@ -1,0 +1,82 @@
+.background-about {
+    width: 1920px;
+    height: 1080px;
+    background-image: linear-gradient(to top, #73b2e5, #6ba6dc);
+  }
+
+  .white-logo {
+    width: 216px;
+    height: 89px;
+  }
+  .menu-line-symbole {
+    width: 42px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #ffffff;
+  }
+  .login-line {
+    width: 79px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+  }
+  .login-text {
+    width: 42px;
+    height: 9px;
+    font-family: WorkSans;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .about-main-text {
+    width: 228px;
+    height: 30px;
+    font-family: WorkSans;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .About-describe-text {
+    width: 642px;
+    height: 269px;
+    font-family: WorkSans;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .create-line {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+  }
+  .create-button-text {
+    width: 113px;
+    height: 19px;
+    font-family: WorkSans;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f6f7f9;
+  }
