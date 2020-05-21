@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35mm" height="49.5mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3500 4950"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="663" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="700">
+	<font-face 
+		font-family="Kozuka Gothic Pr6N B">
+		<font-face-src>
+			<font-face-name name="KozGoPr6N-Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="t" horiz-adv-x="384" d="M90.9997 556.999l-72.9991 0 0 -108.998 72.9991 0 0 -257c0,-62.0002 3.00045,-201.001 163,-201.001 43.0009,0 79,5.00005 99.0002,13.0006l-1.9996 113c-15.0002,-3.00045 -26.9999,-5.00005 -48.0009,-5.00005 -44.9984,0 -65.9994,28.0007 -65.9994,95.001l0 242 123 0 0 108.998 -123 0 0 145.002 -146 -43.0009 0 -102.001z"/>
+   <glyph unicode="e" horiz-adv-x="551" d="M465.999 124c-37.9987,-13.0006 -80.9996,-23.0007 -136,-23.0007 -79.9987,0 -148,38.0008 -151.999,133l333 0c3.00045,16.001 3.99921,37 3.99921,58.9998 0,180 -87.9992,276.002 -222.999,276.002 -163,0 -255.001,-138.002 -255.001,-298.001 0,-173 97.9994,-281 270.001,-281 68.9999,0 133.998,11.9997 180,31.9999l-21.0011 102.001zm-287.999 213.001c3.99921,54.9985 33.9995,128.998 104.999,128.998 73.0012,0 96.0018,-70.9995 95.001,-128.998l-200 0z"/>
+   <glyph unicode="v" horiz-adv-x="539" d="M377 557l-69.9994 -270c-12.0004,-48.9997 -22.0004,-94.0001 -31.001,-142l-2.99978 0c-8.99933,48.0002 -18.9994,94.0001 -30.9998,142l-73.0004 270 -158.999 0 186.999 -557 143.001 0 189.999 557 -153 0z"/>
+   <glyph unicode="s" horiz-adv-x="443" d="M388 538c-31.9999,16.9998 -80.9996,31.0012 -138,31.0012 -124,0 -204.001,-76.0016 -204.001,-176.001 0,-60.9994 38.0008,-120.001 142.001,-162.001 60.9994,-25.999 79.9987,-43.9996 79.9987,-77.9991 0,-33.9995 -24.9982,-55.9993 -76.9983,-55.9993 -46.0013,0 -101,20.0002 -130.001,37l-27.9986 -107.001c37,-21.9998 95.9997,-37 156.999,-37 139.001,0 218.999,70.0007 218.999,176.001 0,77.0004 -43.9996,131 -138,170 -63.9998,26.9999 -84.9988,43.0009 -84.9988,73.9999 0,30.0003 23.9994,52.9989 68.9999,52.9989 42,0 80.9996,-15.9989 104.999,-28.9995l28.0007 104z"/>
+   <glyph unicode="r" horiz-adv-x="386" d="M371.001 566c-10.0001,1.9996 -19.0015,3.00045 -33.0008,3.00045 -52.0001,0 -112.001,-37 -138,-109l-3.99921 0 -6.0009 96.9985 -127.001 0c2.00169,-49.9984 4.0013,-104.999 4.0013,-173.999l0 -383 148 0 0 287.999c0,95.001 50.9993,140.001 118,140.001 15.0002,0 26.9999,-1.00085 38.0008,-3.00045l0 141z"/>
+   <glyph unicode="o" horiz-adv-x="593" d="M299 569.001c-151,0 -264,-106.002 -264,-293.001 0,-180.999 107.999,-287 257.999,-287 124,0 260.001,82.0004 260.001,294 0,169.001 -97.9994,286.002 -254,286.002zm104 -289c0,-99.0002 -38.0008,-182.001 -107.999,-182.001 -72.0003,0 -110.001,82.0004 -110.001,181.001 0,85.0009 28.9995,181.001 111,181.001 75.9995,0 107.001,-93.0014 107.001,-180z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Kozuka Gothic Pr6N B";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str0 {stroke:black;stroke-width:3.33333}
+    .fil3 {fill:none}
+    .fil0 {fill:#155BA6}
+    .fil1 {fill:#46B4E8}
+    .fil7 {fill:#5E6363}
+    .fil5 {fill:#808282}
+    .fil2 {fill:#F5F7F9}
+    .fil4 {fill:white}
+    .fil6 {fill:#101A1A;fill-opacity:0.262745}
+    .fnt1 {font-weight:bold;font-size:797.658px;font-family:'Kozuka Gothic Pr6N B'}
+    .fnt0 {font-weight:bold;font-size:1338.99px;font-family:'Kozuka Gothic Pr6N B'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2524189887968">
+   <rect class="fil0" x="414" y="503" width="2167" height="1167"/>
+   <g>
+    <g transform="matrix(0.750056 0 0 1 -751.313 -1019.8)">
+     <text x="1750" y="2475"  class="fil1 fnt0">v</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 -280.649 -1019.8)">
+     <text x="1750" y="2475"  class="fil2 fnt1">o</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 74.1358 -1019.8)">
+     <text x="1750" y="2475"  class="fil2 fnt1">t</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 304.477 -1019.8)">
+     <text x="1750" y="2475"  class="fil2 fnt1">e</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 634.134 -1019.8)">
+     <text x="1750" y="2475"  class="fil2 fnt1">r</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 865.074 -1019.8)">
+     <text x="1750" y="2475"  class="fil2 fnt1">s</text>
+    </g>
+   </g>
+  </g>
+  <g id="_2524189898848">
+   <rect class="fil3" x="414" y="2267" width="2167" height="1167"/>
+   <g>
+    <g transform="matrix(0.750056 0 0 1 -751.313 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt0">v</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 -280.649 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt1">o</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 74.1358 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt1">t</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 304.477 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt1">e</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 634.134 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt1">r</text>
+    </g>
+    <g transform="matrix(0.750056 0 0 1 865.074 744.246)">
+     <text x="1750" y="2475"  class="fil4 fnt1">s</text>
+    </g>
+   </g>
+  </g>
+  <g id="_2524189896736">
+   <g id="WiP">
+    <g id="Artboard">
+     <g id="Group">
+      <polygon id="Rectangle" class="fil5" points="504,4233 602,4289 699,4233 671,4344 531,4344 "/>
+      <polygon id="Triangle" class="fil6" points="602,4207 668,4344 535,4344 "/>
+      <circle id="Oval" class="fil7" cx="500" cy="4211" r="9"/>
+      <circle id="Oval_0" class="fil7" cx="602" cy="4181" r="9"/>
+      <circle id="Oval_1" class="fil7" cx="703" cy="4211" r="9"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <rect class="fil3 str0" x="476" y="4159" width="248" height="204"/>
+ </g>
+</svg>

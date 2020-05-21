@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {SiteMenu} from './components/site-menu/site-menu.jsx';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <SiteMenu />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -18,5 +18,4 @@ ReactDOM.render(
 serviceWorker.register();
 
 
-// import logo from './logo.png';
 
