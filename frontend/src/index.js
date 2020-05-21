@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {SiteMenu} from './components/site-menu/site-menu.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SiteMenu />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -14,4 +15,8 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
+
+
+// import logo from './logo.png';
+

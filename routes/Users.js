@@ -59,7 +59,7 @@ users.post('/login', (req, res)=>{
     })
     .then(user => {
         if(user.dataValues) {
-            
+            //do przerobienia, nie pobiera tokenu, wyłącznie logowanie i pobieranie możliwości gloswoania z fontendu.
             // logika weryfikacji hasła + zapytanie o token do Beniamina
             bcrypt.compare(req.body.password, user.dataValues.password, (err, password_correct)=>{
                 if(password_correct){

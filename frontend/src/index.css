@@ -11,3 +11,214 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+.background-resolution {
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+
+}
+.menu-line-symbole {
+  width: 42px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #3f3e3e;
+}
+.logo-space {
+  width: 256px;
+  height: 138px;
+}
+.english-text {
+  width: 74px;
+  height: 10px;
+  font-family: WorkSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.english-text.symbole {
+  font-family: MinionPro;
+  font-weight: normal;
+}
+.login-line-symbole {
+  width: 79px;
+  height: 30px;
+  border-radius: 8px;
+  border: solid 2px #274595;
+  background-color: #274595;
+}
+.login-text {
+  width: 42px;
+  height: 9px;
+  font-family: WorkSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.main-text {
+  width: 451px;
+  height: 97px;
+  font-family: WorkSans;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: #b1b1b0;
+}
+
+.main-text.main {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+.button-create {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #274595, #73b3e5);
+}
+.create-text {
+  width: 113px;
+  height: 19px;
+  font-family: WorkSans;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f6f7f9;
+}
+.or-main-text {
+  width: 287px;
+  height: 51px;
+  font-family: WorkSans;
+  font-size: 26px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.or-main-text.second {
+  font-size: 20px;
+  font-weight: 300;
+  color: #b1b1b0;
+}
+.secret-code-text {
+  width: 130px;
+  height: 16px;
+  font-family: WorkSans;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9c9b9b;
+}
+.code-line {
+  width: 468px;
+  height: 2px;
+  background-color: #9c9b9b;
+}
+.submit-button {
+  width: 468px;
+  height: 72px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #274595, #73b3e5);
+}
+.submint-text {
+  width: 86px;
+  height: 14px;
+  font-family: WorkSans;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 100vh;
+  background-color: pink;
+}
+
+#section2 {
+  height: 100vh;
+  background-color: yellow;
+}
+#section3 {
+  height: 100vh;
+  background-color: blue;
+}
+.main {
+  margin-left: 100px;
+}
+.menu {
+  position: fixed;
+  background-color: red;
+  width: 100px;
+  height: 100vh;
+}
