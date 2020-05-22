@@ -6,9 +6,9 @@ export const SiteMenu = () => {
     return (
         <div className='background-space'>
             <div className='menu-space'>
-            <button class="header-menu-button__button active" type="button" title="Open menu" aria-expanded="true" aria-pressed="true">
-            <span class="header-menu-button__bars">
-           </span><span class="header-menu-button__text">Menu</span></button>
+            {/* <div className='x-symbole'><p>x</p></div> */}
+            <button class="header-menu-button__button active" type="button" title="Open menu" aria-expanded="true" aria-pressed="true" >
+            <span class="header-menu-button__bars"></span><span class="header-menu-button__text">Menu</span></button>
 
             </div>
 
@@ -32,6 +32,6 @@ export const SiteMenu = () => {
             </div>
             </div>
 </div>
-    );
+    )
 }
 export default SiteMenu;
