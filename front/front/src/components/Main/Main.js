@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 
 const MainPage = () => {
     const addMainHandler = event =>{
         event.preventDefault();
@@ -13,7 +13,7 @@ const MainPage = () => {
     return (
     <form className="main-page" onSumbit={addMainHandler}>
         <input type="text" />
-        <button type="submit">Add Goal</button>
+        <button type="submit">submit</button>
     </form>
     );
 };
