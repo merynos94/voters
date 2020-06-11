@@ -3,10 +3,17 @@ import {Link} from 'react-router-dom';
 
 import MainHeader from './MainHeader';
 import NavLinks from './NavLinks';
+import SideDrawer from './SideDrawer';
 import './MainNavigation.css';
 
 const MainNavigation = props => {
-    return <MainHeader>
+    <React.Fragment>
+    return (
+    <SideDrawer>
+        <nav className="main-navigation__draver-nav"></nav>
+        <NavLinks />
+    </SideDrawer>
+    <MainHeader>
         <button className="main-navigation__menu-btn">
             <span />
             <span />
@@ -16,10 +23,11 @@ const MainNavigation = props => {
             YourPlaces
             <Link to ="/">YourPlaces</Link>
         </h1>    
-        <nav>
+        <nav className="main-navigation__header-nav">
            <NavLinks />
         </nav>
     </MainHeader>
+    </React.Fragment>
 };
 
 export default MainNavigation;
