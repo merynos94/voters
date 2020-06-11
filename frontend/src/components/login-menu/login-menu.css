@@ -7,7 +7,7 @@
     height: 1297px;
     background-color: #385ca3;
   }
-  .text-account {
+  .popup-text {
     width: 18px;
     height: 290px;
     font-family: WorkSans;
@@ -19,7 +19,15 @@
     letter-spacing: normal;
     text-align: left;
     color: #f6f7f9;
+    transform: rotate(-90deg);
   }
+  .popup-text a {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: underline;
+}
   .text-singup {
     width: 23px;
     height: 83px;

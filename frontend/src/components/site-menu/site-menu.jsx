@@ -34,3 +34,4 @@ export const SiteMenu = () => {
 </div>
     )
 }
+export default SiteMenu;

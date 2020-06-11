@@ -1,0 +1,162 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: WorkSans;
+    }
+
+  #sidebar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: 4s;
+  }
+  
+  #sidebar.active {
+    left:0;
+  }
+
+  #sidebar ul li {
+    list-style:none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+  }
+
+  #sidebar .toggle-btn {
+    position:absolute;
+    top: 30px;
+    left: 330px;
+  
+  }
+
+  .toggle-btn span{
+    width:45px;
+    height: 4px;
+    background:#000;
+    display:block;
+    margin-top: 4px;
+
+  }
+
+  
+#section1 {
+  height: 100%;
+  width:100%;
+  background-image: linear-gradient(to top, #73b2e5, #6ba6dc);
+}
+
+#section2 {
+  height: 100%;
+  width:100%;
+  background-image: linear-gradient(to top, #6ba6dc, #3154a0);
+}
+#section3 {
+  height: 100%;
+  width:100%;
+  background-image: linear-gradient(to top, #3154a0, #274696);
+}
+.main {
+  margin-left: 100px;
+}
+.menu {
+  position: fixed;
+  background-color: red;
+  width: 100px;
+  height: 100vh;
+}
+
+p.about-main-text{
+  width: 228px;
+  height: 30px;
+  
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+p.About-describe-text {
+  width: 642px;
+  height: 269px;
+  font-family: WorkSans;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.linia-create-kopia-2 {
+  width: 1530px;
+  height: 84px;
+  border-radius: 8px;
+  border: solid 2px #ffffff;
+  
+}
+#first-title{
+margin-bottom: 50px;
+}
+
+#second-title{
+  margin-bottom: 50px;
+}
+#third-title{
+  margin-bottom: 50px;
+}
+
+p.faq-title {
+  width: 228px;
+  height: 30px;
+  font-family: WorkSans;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+
+#first-describe{
+
+}
+
+#second-describe{
+
+}
+
+#third-describe{
+
+}
+p.faq-describe {
+  width: 1149px;
+  height: 53px;
+  font-family: WorkSans;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
