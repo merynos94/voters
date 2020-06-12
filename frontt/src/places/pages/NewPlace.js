@@ -8,7 +8,12 @@ const NewPlace = () => {
 
      <form className="place-form">
        
-        <Input element="input" label= "Title" />
+        <Input
+        element="input"
+        label= "Title"
+        validators={[]}
+        errorText="Please enter a valid title."
+         />
     </form>
     );
 };
