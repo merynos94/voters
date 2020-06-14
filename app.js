@@ -1,12 +1,10 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const app = express()
-const port = 3000
-const Frontend = require('./frontendy/Frontend')
-app.use(bodyParser.json())
-app.use('/' ,Frontend )
+const express = require ('express');
+const bodyParser = require('body-parser');
 
-//var Users = require('./routes/Users')
-//app.use('/users', Users)
+const placesRoutes = require('./routes/places-routes');
 
-app.listen(port)
+const app = express();
+
+app.use('/api/places',placesRoutes); // => /api/places...
+
+app.listen(5000);
