@@ -1,30 +1,39 @@
 const express = require('express');
+const { check } = require('express-validator');
+
+const placesControllers = require('../controllers/places-controllers');
 
 const router = express.Router();
 
+router.get('/:pid', placesControllers.getPlaceById);
 
-const DUMMY_PLACES = [
-    {
-        id: 'p1',
-        title: 'Empire State ',
-        description: ' One of the most skycrapper in the world',
-        location: {
-            lat: 40.7484474,
-            lng: -73.9871516
-        },
-        address: 'Krakow 2212',
-        creator: 'u1' 
+router.get('/user/:uid', placesControllers.getPlacesByUserId);
 
-    }
-];
+router.post(
+  '/',
+  [
+    check('title')
+      .not()
+      .isEmpty(),
+    check('description').isLength({ min: 5 }),
+    check('address')
+      .not()
+      .isEmpty()
+  ],
+  placesControllers.createPlace
+);
 
-router.get('/:pid', (req,res,next) => {
-    const placeId = req.params.pid;
-    const place = DUMMY_PLACES.find(p => {
-        return p.id === placeId;
-    });
-    
-    res.json({place});
-});
+router.patch(
+  '/:pid',
+  [
+    check('title')
+      .not()
+      .isEmpty(),
+    check('description').isLength({ min: 5 })
+  ],
+  placesControllers.updatePlace
+);
+
+router.delete('/:pid', placesControllers.deletePlace);
 
 module.exports = router;
