@@ -22,15 +22,15 @@ app.use((error, req, res, next) => {
   if (res.headerSent) {
     return next(error);
   }
-  res.status(error.code || 500)
-  res.json({message: error.message || 'An unknown error occurred!'});
+  res.status(error.code || 500);
+  res.json({ message: error.message || 'An unknown error occurred!' });
 });
-mongoose
-.connect('mongodb+srv://radek:radek1234@cluster0-x4rnu.mongodb.net/<places>?retryWrites=true&w=majority')
-.then(() =>{
+mongoose 
+.connect('mongodb+srv://radek:radek1234@cluster0-x4rnu.mongodb.net/places?retryWrites=true&w=majority',
+{useNewUrlParser: true, useUnifiedTopology:true})
+.then(() => {
   app.listen(5000);
 })
 .catch(err => {
   console.log(err);
-  
 });
