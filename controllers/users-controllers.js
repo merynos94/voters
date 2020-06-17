@@ -23,7 +23,7 @@ const signup = async (req, res, next) => {
       new HttpError('Invalid inputs passed, please check your data.', 422)
     );
   }
-  const { email, password} = req.body;
+  const { email, password} = req.body; // ----- odstęp pomiędzy password a  }
 
   let existingUser
   try {
@@ -35,7 +35,7 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
-  
+
   if (existingUser) {
     const error = new HttpError(
       'User exists already, please login instead.',
@@ -43,11 +43,11 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
-  
+
    const createdUser = new User({
      email,
      password
-    
+
   });
 
   try {

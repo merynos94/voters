@@ -5,7 +5,9 @@ const HttpError = require('../models/http-error');
 const Candidate = require('../models/cantidate');
 const User = require('../models/user');
 
-const getCandidateById = async (req, res, next) => {
+// ----- wygląda mi na to, że candidates-controller nie jest zbytnio ptorzebny
+
+const getCandidateById = async (req, res, next) => {  // ----- po co to jest?
   const candidateId = req.params.pid;
 
   let candidate;
@@ -30,7 +32,7 @@ const getCandidateById = async (req, res, next) => {
   res.json({ candidate: candidate.toObject({ getters: true }) });
 };
 
-const getCandidatesByUserId = async (req, res, next) => {
+const getCandidatesByUserId = async (req, res, next) => {  // ----- po  co to jest? nie kopiuj bezmyślnie
   const userId = req.params.uid;
 
 
@@ -58,7 +60,7 @@ const getCandidatesByUserId = async (req, res, next) => {
   });
 };
 
-const createdCandidate = async (req, res, next) => {
+const createdCandidate = async (req, res, next) => {  // ----- to też nie jest potrzebne
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return next(
@@ -114,4 +116,3 @@ const createdCandidate = async (req, res, next) => {
 exports.getCandidateById = getCandidateById;
 exports.getCandidatesByUserId = getCandidatesByUserId;
 exports.createdCandidate = createdCandidate;
-
