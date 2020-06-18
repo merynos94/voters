@@ -17,6 +17,7 @@ router.post(
       check('candidateId')
         .not()
         .isEmpty()
+
     ],
     candidatesControllers.createdCandidate
   );

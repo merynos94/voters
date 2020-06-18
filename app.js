@@ -11,6 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/api/candidates', candidatesRoutes); 
+
 app.use('/api/users', usersRoutes);
 
 app.use((req, res, next) => {
