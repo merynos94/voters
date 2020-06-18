@@ -71,7 +71,7 @@ const Auth = () => {
             <h2>Login Required</h2>
             <hr />
             <form onSubmit={authSubmitHandler}>
-            {!isLoginMode && ()}
+           
                 <Input
                     element="input"
                     id="email"
@@ -81,7 +81,7 @@ const Auth = () => {
                     errorText="Please enter a valid email address."
                     onInput={inputHandler}
                 />
-
+            
                 <Input 
                 element="input"
                     id="password"
