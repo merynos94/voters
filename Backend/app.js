@@ -12,12 +12,13 @@ app.use(bodyParser.json());
 
 app.use('/api/candidates', candidatesRoutes);
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Orgin', '*');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
-    'Orgin,X-Requested-With,Content-Type, Accept, Authorization'
-    );
-    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE');
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
+
   next();
 });
 
@@ -40,10 +41,8 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
-const mongoUri = 'mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/candidates?retryWrites=true&w=majority';
-const mm = 'mongodb://127.0.0.1:27017/?compressors=snappy&gssapiServiceName=mongodb'
 mongoose
-  .connect(mm)
+  .connect('mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/mern?retryWrites=true&w=majority')
   .then(() => {
     app.listen(5000);
   })
