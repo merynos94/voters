@@ -20,26 +20,6 @@ const Auth = () => {
         }
     }, false);
     const switchModeHandler = () => {
-        if (!isLoginMode) {
-            setFormData({
-                ...formState.inputs,
-                name: undefined
-            },
-                formState.inputs.email.isValid && formState.inputs.password.isValid
-
-            );
-        } else {
-            setFormData(
-                {
-                    ...formState.inputs,
-                    name: {
-                        value: '',
-                        isValid: false
-                    }
-                },
-                false
-            );
-        }
         setIsLoginMode(prevMode => !prevMode);
     };
 
@@ -71,7 +51,7 @@ const Auth = () => {
             <h2>Login Required</h2>
             <hr />
             <form onSubmit={authSubmitHandler}>
-           
+
                 <Input
                     element="input"
                     id="email"
@@ -81,8 +61,8 @@ const Auth = () => {
                     errorText="Please enter a valid email address."
                     onInput={inputHandler}
                 />
-            
-                <Input 
+
+                <Input
                 element="input"
                     id="password"
                     type="password"

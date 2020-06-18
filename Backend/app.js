@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 
 const candidatesRoutes = require('./routes/candidates-routes');
 const usersRoutes = require('./routes/users-routes');
-const homeRoutes = require('./routes/home-routes');
 const HttpError = require('./models/http-error');
 
 const app = express();
@@ -13,7 +12,6 @@ app.use(bodyParser.json());
 
 app.use('/api/candidates', candidatesRoutes);
 app.use('/api/users', usersRoutes);
-app.use('/api/home', homeRoutes)
 
 
 app.use((req, res, next) => {

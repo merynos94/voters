@@ -1,34 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import _ from 'lodash';
 
-import UserItem from './UserItem';
-import Card from '../../shared/components/UIElements/Card';
+const resultsUri = 'http://localhost:3060/results';
 
-import './UsersList.css';
+const ResultsList = props => {
+  const [results, setResults] = useState({});
+  useEffect(
+    () => {
+      fetch(resultsUri)
+        .then(res => res.json())
+        .then(res => setResults(res))
+        .catch(err => console.log(err));
+    },
+  []
+  )
 
-const UsersList = props => {
-  if (props.items.length === 0) {
-    return (
-      <div className="center">
-        <Card>
-          <h2>No users found.</h2>
-          </Card>
-      </div>
-    );
-  }
-
+  console.log(results)
   return (
-    <ul className="users-list">
-      {props.items.map(user => (
-        <UserItem
-          key={user.id}
-          id={user.id}
-          image={user.image}
-          name={user.name}
-          placeCount={user.places}
-        />
-      ))}
+    <ul className="results-list">
+      {
+        _.map(
+          results,
+          item => (
+            <li>
+              <h2>Kandydat: { item.desc }</h2>
+              <p>Wynik: { item.result }</p>
+            </li>
+        ))
+      }
     </ul>
   );
 };
 
-export default UsersList;
+export default ResultsList;
