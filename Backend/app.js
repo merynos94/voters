@@ -30,7 +30,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect('mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/candidates?retryWrites=true&w=majority')
+  .connect('mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/mern?retryWrites=true&w=majority')
   .then(() => {
     app.listen(5000);
   })
