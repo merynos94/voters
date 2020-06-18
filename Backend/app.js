@@ -11,6 +11,18 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/api/candidates', candidatesRoutes);
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Orgin', '*');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Orgin,X-Requested-With,Content-Type, Accept, Authorization'
+    );
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE');
+  next();
+});
+
+app.use('/api/candidates', candidatesRoutes); 
+
 app.use('/api/users', usersRoutes);
 
 
