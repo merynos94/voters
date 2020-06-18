@@ -23,11 +23,7 @@ const signup = async (req, res, next) => {
       new HttpError('Invalid inputs passed, please check your data.', 422)
     );
   }
-<<<<<<< HEAD
   const { email, password } = req.body;
-=======
-  const { email, password} = req.body; // ----- odstęp pomiędzy password a  }
->>>>>>> 3654a16f79f12f1d999d8f3d46575512979e5142
 
   let existingUser
   try {
@@ -39,10 +35,6 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 3654a16f79f12f1d999d8f3d46575512979e5142
   if (existingUser) {
     const error = new HttpError(
       'User exists already, please login instead.',
@@ -50,19 +42,11 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
-<<<<<<< HEAD
    const createdUser = new User({
      email,
      password,
      poll: []
     
-=======
-
-   const createdUser = new User({
-     email,
-     password
-
->>>>>>> 3654a16f79f12f1d999d8f3d46575512979e5142
   });
   try {
     await createdUser.save();

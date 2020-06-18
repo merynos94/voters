@@ -14,7 +14,7 @@ import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 
-const App = () => {
+const Frontend = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = useCallback(() => {
@@ -78,4 +78,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Frontend;

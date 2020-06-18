@@ -2,13 +2,12 @@
 const { validationResult } = require('express-validator');
 const mongoose = require('mongoose');
 const HttpError = require('../models/http-error');
-const Candidate = require('../models/cantidate');
+const Candidate = require('../models/candidate');
 const User = require('../models/user');
 
-// ----- wygląda mi na to, że candidates-controller nie jest zbytnio ptorzebny
 
-const getCandidateById = async (req, res, next) => {  // ----- po co to jest?
-  const candidateId = req.params.pid;
+const getCandidateById = async (req, res, next) => { 
+  const candidateId = req.params.cid;
 
   let candidate;
   try {
@@ -32,7 +31,7 @@ const getCandidateById = async (req, res, next) => {  // ----- po co to jest?
   res.json({ candidate: candidate.toObject({ getters: true }) });
 };
 
-const getCandidatesByUserId = async (req, res, next) => {  // ----- po  co to jest? nie kopiuj bezmyślnie
+const getCandidatesByUserId = async (req, res, next) => { 
   const userId = req.params.uid;
 
 
@@ -60,7 +59,7 @@ const getCandidatesByUserId = async (req, res, next) => {  // ----- po  co to je
   });
 };
 
-const createdCandidate = async (req, res, next) => {  // ----- to też nie jest potrzebne
+const createdCandidate = async (req, res, next) => { 
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return next(
@@ -82,9 +81,10 @@ const createdCandidate = async (req, res, next) => {  // ----- to też nie jest 
   let user;
   try {
     user = await User.findById(poll);
+    console.log("User found: " + user)
   } catch (err) {
     console.log(err)
-    const error = new HttpError('Creating candidate failed, please try again', 500);
+    const error = new HttpError('Creating candidate failed, please try again...', 500);
     return next(error);
   }
 
@@ -94,17 +94,19 @@ const createdCandidate = async (req, res, next) => {  // ----- to też nie jest 
   }
 
   console.log(user);
+  console.log(createdCandidate);
 
   try {
     const sess = await mongoose.startSession();
+    console.log(sess)
     sess.startTransaction();
     await createdCandidate.save({ session: sess });
-    user.candidates.push(createdCandidate);
+    user.poll.push(createdCandidate);
     await user.save({ session: sess });
     await sess.commitTransaction();
   } catch (err) {
     const error = new HttpError(
-      'Creating candidate failed, please try again.',
+      'Creating candidate failed, please try again. \n' + err,
       500
     );
     return next(error);
