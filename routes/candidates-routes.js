@@ -7,35 +7,17 @@ const router = express.Router();
 
 router.get('/:cid', candidatesControllers.getCandidateById);
 
-router.get('/user/:uid', candidatesControllers.getCandidatesByUserId);
-
 router.post(
-  '/',
-  [
-    check('firstName')
-      .not()
-      .isEmpty(),
-    check('lastName')
-      .not()
-      .isEmpty(),
-    check('candidateId')
-      .not()
-      .isEmpty()
-  ],
-  candidatesControllers.createdCandidate
-);
-
-// router.patch(
-//   '/:pid',
-//   [
-//     check('title')
-//       .not()
-//       .isEmpty(),
-//     check('description').isLength({ min: 5 })
-//   ],
-//   placesControllers.updatePlace
-// );
-
-// router.delete('/:pid', placesControllers.deletePlace);
-
+    '/',
+    [
+      check('firstName')
+        .not()
+        .isEmpty(),
+      check('lastName').isLength({ min: 5 }),
+      check('candidateId')
+        .not()
+        .isEmpty()
+    ],
+    candidatesControllers.createdCandidate
+  );
 module.exports = router;
