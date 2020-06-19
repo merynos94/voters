@@ -36,7 +36,14 @@ const MainNavigation = props => {
                     <span />
                 </button>
                 <h1 className="main-navigation__title">
-                    <Link to="/">YourPlaces</Link>
+                {/* <div className = "header-logo"> */}
+                    <Link to="/">VOTERS</Link>
+                        
+                            
+                    
+                    
+                    {/* </div>  */}
+
                 </h1>
                 <nav className="main-navigation__header-nav">
                     <NavLinks />

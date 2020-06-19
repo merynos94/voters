@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback} from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +14,9 @@ import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
-//import Poll from './home/poll/poll';
+import Poll from './home/poll/poll';
+import Main from './shared/components/smooth-scrolling/main';
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -56,7 +58,8 @@ const App = () => {
     routes = (
       <Switch>
         <Route path="/" exact>
-          <Users />
+          <Main />
+          {/* <Users /> */}
         </Route>
         <Route path="/:userId/places" exact>
           <UserPlaces />
@@ -68,7 +71,7 @@ const App = () => {
           <Results />
         </Route>
         <Route path="/poll">
-          {/* <Poll /> */}
+          <Poll />
         </Route>
         <Redirect to="/auth" />
       </Switch>

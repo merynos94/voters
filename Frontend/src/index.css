@@ -12,7 +12,12 @@ body {
   margin: 0;
   height: 100vh;
   background: rgb(39,70,150);
-  background: linear-gradient(0deg, rgba(39,70,150,1) 0%, rgba(49,84,160,1) 33%, rgba(107,166,220,1) 66%, rgba(115,178,229,1) 100%);
+  background: linear-gradient(0deg, rgba(39,70,150,1) 0%,
+   rgba(49,84,160,1) 33%,
+    rgba(107,166,220,1) 66%, 
+    rgba(115,178,229,1) 100%);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .slide-in-left-enter {
