@@ -14,6 +14,7 @@ import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
+import Poll from './home/poll/poll';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -61,6 +62,9 @@ const App = () => {
         </Route>
         <Route path="/results">
           <Results />
+        </Route>
+        <Route path="/poll">
+          <Poll />
         </Route>
         <Redirect to="/auth" />
       </Switch>
