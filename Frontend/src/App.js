@@ -14,18 +14,22 @@ import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
-import Poll from './home/poll/poll';
+//import Poll from './home/poll/poll';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState(false);
 
-  const login = useCallback(() => {
+  const login = useCallback(uid => {
     setIsLoggedIn(true);
+    setUserId(uid);
   }, []);
 
   const logout = useCallback(() => {
     setIsLoggedIn(false);
+    setUserId(null);
   }, []);
+
 
   let routes;
 
@@ -64,7 +68,7 @@ const App = () => {
           <Results />
         </Route>
         <Route path="/poll">
-          <Poll />
+          {/* <Poll /> */}
         </Route>
         <Redirect to="/auth" />
       </Switch>
@@ -74,13 +78,16 @@ const App = () => {
   }
   return (
     <AuthContext.Provider
-      value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }}
+      value={{
+        isLoggedIn: isLoggedIn,
+        userId: userId,
+        login: login,
+        logout: logout
+      }}
     >
       <Router>
         <MainNavigation />
-        <main>
-           {routes}
-        </main>
+        <main>{routes}</main>
       </Router>
     </AuthContext.Provider>
   );
