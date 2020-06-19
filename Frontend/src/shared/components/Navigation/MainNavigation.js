@@ -36,13 +36,13 @@ const MainNavigation = props => {
                     <span />
                 </button>
                 <h1 className="main-navigation__title">
-                {/* <div className = "header-logo"> */}
+                <div className = "header-logo">
                     <Link to="/">VOTERS</Link>
                         
                             
                     
                     
-                    {/* </div>  */}
+                    </div> 
 
                 </h1>
                 <nav className="main-navigation__header-nav">

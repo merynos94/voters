@@ -15,6 +15,7 @@ import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
 import Poll from './home/poll/poll';
+import Section from './shared/components/smooth-scrolling/Section';
 import Main from './shared/components/smooth-scrolling/main';
 
 
@@ -59,6 +60,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact>
           <Main />
+          <Section />
           {/* <Users /> */}
         </Route>
         <Route path="/:userId/places" exact>

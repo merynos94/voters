@@ -20,10 +20,10 @@
 
 .main-navigation__title {
   color: white;
-  /* position: absolute;
+  position: absolute;
   top: 0;
   width: 100%;
-  text-align: center; */
+  text-align: center;
 }
 .header-logo {
   display:block;

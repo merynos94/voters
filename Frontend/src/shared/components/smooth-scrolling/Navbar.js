@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
+import { NavLink } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
+
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -9,12 +10,13 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="nav" id="navbar">
+      // <nav className="nav" id="navbar">
         <div className="nav-content">
-   
+ 
+    
           <ul className="nav-items">
             <li className="nav-item">
-              <Link
+              <NavLink
                 activeClass="active"
                 to="section1"
                 spy={true}
@@ -23,7 +25,7 @@ export default class Navbar extends Component {
                 duration={500}
               >
                 Section 1
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
               <Link
@@ -75,7 +77,7 @@ export default class Navbar extends Component {
             </li>
           </ul>
         </div>
-      </nav>
+      //  </nav>
     );
   }
 }
