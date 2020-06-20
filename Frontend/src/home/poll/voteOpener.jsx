@@ -54,4 +54,6 @@ const VoteOpener = props => {
   );
 };
 
+
+//
 export default VoteOpener;
