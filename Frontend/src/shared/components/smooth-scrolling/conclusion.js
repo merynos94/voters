@@ -19,9 +19,6 @@ and Tomoyuki Asano for their valuable comments about the dishonesty of the
 administrator and the counter. </p>
 <hr />
   </div>
-       
-  
-        
   );
 };
 export default Conclusion;
