@@ -21,21 +21,7 @@ import './NavLinks.css';
                 <ul className="nav-links">
 
 
-                    {!auth.isLoggedIn && (
-                        <li>
 
-                            <Link
-                                activeClass="active"
-                                to="section1"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                Section 1
-              </Link>
-                        </li>
-                    )}
                     {auth.isLoggedIn && (<li>
                         <NavLink to="/users" > ALL CANDIDATE </NavLink>
                     </li>

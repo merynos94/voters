@@ -3,34 +3,42 @@ import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
 import Section from "./Section";
-import dummyText from "./DummyText";
-import About from './about';
+
+import Structure from './structure';
+import Introduction from "./introduction";
+import Conclusion from "./conclusion";
 
 class Main extends Component {
     render() {
       return (
+     
+      
         <div className="App">
           {/* <Navbar /> */}
+      
+          <div>
           <Section
-            title="About"
-            subtitle={About}
+            title="Introduction"
+            subtitle={<Introduction />}
             dark={true}
             id="section1"
           />
+          </div>
           <Section
-            title="Faq"
-            subtitle={dummyText}
+            title="Structure"
+            subtitle={<Structure/>}
             dark={true}
             id="section2"
           />
           <Section
-            title="Contact"
-            subtitle={dummyText}
+            title="Conclusion"
+            subtitle={<Conclusion />}
             dark={true}
             id="section3"
           />
 
         </div>
+      
       );
     }
   }
