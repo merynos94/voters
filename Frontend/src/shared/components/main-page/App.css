@@ -13,12 +13,9 @@
     z-index: 1000;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
   }
-  
-
   .nav-logo:hover {
     cursor: pointer;
   }
-  
   .nav .nav-content {
     max-width: 900px;
     padding: 0rem 3rem;
@@ -27,29 +24,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-  }
-  
+  } 
   .nav-item {
     display: inline;
     margin-left: 2rem;
     color: #333;
   }
-  
   .nav-item:hover {
     color: black;
     cursor: pointer;
   }
-  
-  .section {
-  }
-  
-  .section-dark {
 
+  .section-dark {
     color: white;
   }
-  
   .section-content {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 40px;
+    max-width: 100%;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 10px;
   }

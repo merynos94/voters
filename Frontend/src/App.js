@@ -7,14 +7,14 @@ import {
 } from 'react-router-dom';
 
 import Users from './user/pages/Users';
-import NewPlace from './places/pages/NewPlace';
-import UserPlaces from './places/pages/UserPlaces';
+
+
 import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
 import Poll from './home/poll/poll';
-import Main from './shared/components/smooth-scrolling/main';
+import Main from './shared/components/main-page/main';
 import VoteOpener from './home/poll/voteOpener';
 
 const App = () => {
@@ -36,8 +36,8 @@ const App = () => {
       <Route path="/" exact>
         { isLoggedIn ? <Users /> : <Main /> }
       </Route>
-      <Route path="/:userId/places" exact>
-        <UserPlaces />
+      <Route path="/open-vote" exact>
+      <VoteOpener />
       </Route>
       {
         !isLoggedIn &&
@@ -48,7 +48,7 @@ const App = () => {
       {
         isLoggedIn &&
         <Route path="/places/new" exact>
-          <NewPlace />
+
         </Route>
       }
       <Route path="/results">
