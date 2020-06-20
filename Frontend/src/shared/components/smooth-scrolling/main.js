@@ -9,15 +9,19 @@ class Main extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <Section
+        <div className="section section-dark">
+          <div className="section-content" id="section1">
+            <h1>Introduction</h1>
+            <Introduction />
+          </div>
+        </div>
+{/*          <Section
             title="Introduction"
             subtitle={<Introduction />}
             dark={true}
             id="section1"
-          />
-        </div>
-        <Section
+          />*/}
+{/*        <Section
           title="Structure"
           subtitle={<Structure />}
           dark={true}
@@ -29,7 +33,7 @@ class Main extends Component {
           dark={true}
           id="section3"
         />
-
+*/}
       </div>
 
     );

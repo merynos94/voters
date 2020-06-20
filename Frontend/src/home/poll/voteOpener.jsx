@@ -18,6 +18,7 @@ const formSubmit = (succesCallback, errorCallback) => async (data) => {
     })
 };
 
+
 const VoteOpener = props => {
   const { handleSubmit, register } = useForm();
   const [error, setError] = useState(false);
@@ -37,6 +38,13 @@ const VoteOpener = props => {
       <h2>Something went wrong, refresh the page</h2>
     )
   }
+
+  console.log("werewreerwerew")
+  console.log("werewreerwerew")
+  console.log("werewreerwerew")
+  console.log("werewreerwerew")
+  console.log("werewreerwerew")
+  console.log("werewreerwerew")
 
   return (
     <form onSubmit={ handleSubmit(formSubmit(setVoteResponse, setError)) }>
