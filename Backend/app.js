@@ -10,13 +10,25 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use('/api/candidates', candidatesRoutes); 
+app.use('/api/candidates', candidatesRoutes);
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
+
+  next();
+});
+
+app.use('/api/candidates', candidatesRoutes);
 
 app.use('/api/users', usersRoutes);
 
 
-
 app.use((req, res, next) => {
+  console.log("REQ: ", req);
   const error = new HttpError('Could not find this route.', 404);
   throw error;
 });
@@ -29,12 +41,13 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
+const mongodbUri = 'mongodb://127.0.0.1:27017/?compressors=snappy&gssapiServiceName=mongodb';
+// const mongodbUri = 'mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/mern?retryWrites=true&w=majority';
 mongoose
-  .connect('mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/candidates?retryWrites=true&w=majority')
+  .connect(mongodbUri)
   .then(() => {
     app.listen(5000);
   })
   .catch(err => {
     console.log(err);
   });
-
