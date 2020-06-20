@@ -9,7 +9,6 @@ import {
 import Users from './user/pages/Users';
 import NewPlace from './places/pages/NewPlace';
 import UserPlaces from './places/pages/UserPlaces';
-import UpdatePlace from './places/pages/UpdatePlace';
 import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
@@ -17,7 +16,7 @@ import Results from './home/results/results';
 import Poll from './home/poll/poll';
 import Section from './shared/components/smooth-scrolling/Section';
 import Main from './shared/components/smooth-scrolling/main';
-
+import VoteOpener from './home/poll/voteOpener';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,54 +32,39 @@ const App = () => {
     setUserId(null);
   }, []);
 
-
-  let routes;
-
-  if (isLoggedIn) {
-    routes = (
-      <Switch>
-        <Route path="/" exact>
-          <Users />
-        </Route>
-        <Route path="/:userId/places" exact>
-          <UserPlaces />
-        </Route>
-        <Route path="/places/new" exact>
-          <NewPlace />
-        </Route>
-        <Route path="/places/:placeId">
-          <UpdatePlace />
-        </Route>
-        <Redirect to="/" />
-      </Switch>
-    )
-  }
-  else {
-    routes = (
-      <Switch>
-        <Route path="/" exact>
-          <Main />
-          <Section />
-          {/* <Users /> */}
-        </Route>
-        <Route path="/:userId/places" exact>
-          <UserPlaces />
-        </Route>
+  const routes = (
+    <Switch>
+      <Route path="/" exact>
+        { isLoggedIn ? <Users /> : <Main /> }
+      </Route>
+      <Route path="/:userId/places" exact>
+        <UserPlaces />
+      </Route>
+      {
+        !isLoggedIn &&
         <Route path="/auth">
           <Auth />
         </Route>
-        <Route path="/results">
-          <Results />
+      }
+      {
+        isLoggedIn &&
+        <Route path="/places/new" exact>
+          <NewPlace />
         </Route>
-        <Route path="/poll">
-          <Poll />
-        </Route>
-        <Redirect to="/auth" />
-      </Switch>
-    );
+      }
+      <Route path="/results">
+        <Results />
+      </Route>
+      <Route path="/poll">
+        <Poll />
+      </Route>
+      <Route path="/open-vote">
+        <VoteOpener />
+      </Route>
+      { isLoggedIn ? <Redirect to="/" /> : <Redirect to="/auth" /> }
+    </Switch>
+  );
 
-
-  }
   return (
     <AuthContext.Provider
       value={{
