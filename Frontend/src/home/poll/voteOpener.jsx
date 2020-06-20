@@ -27,6 +27,14 @@ const VoteOpener = props => {
   if (voteResponse) {
     return (
       <>
+        <h2>Thank you for vowerewrterterretreterting!</h2>
+        <h4>Your vote has been succesfully openertreterted!</h4>
+      </>
+    )
+  }
+  if (voteResponse) {
+    return (
+      <>
         <h2>Thank you for voting!</h2>
         <h4>Your vote has been succesfully opened!</h4>
       </>
@@ -38,7 +46,6 @@ const VoteOpener = props => {
       <h2>Something went wrong, refresh the page</h2>
     )
   }
-
 
   return (
     <form onSubmit={ handleSubmit(formSubmit(setVoteResponse, setError)) }>
