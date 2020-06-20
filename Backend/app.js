@@ -41,8 +41,8 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
-//const mongodbUri = 'mongodb://127.0.0.1:27017/?compressors=snappy&gssapiServiceName=mongodb';
- const mongodbUri = 'mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/mern?retryWrites=true&w=majority';
+const mongodbUri = 'mongodb://127.0.0.1:27017/?compressors=snappy&gssapiServiceName=mongodb';
+// const mongodbUri = 'mongodb+srv://radek:radek123@cluster0-oazej.mongodb.net/mern?retryWrites=true&w=majority';
 mongoose
   .connect(mongodbUri)
   .then(() => {
