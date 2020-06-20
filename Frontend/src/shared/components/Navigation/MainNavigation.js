@@ -36,6 +36,7 @@ const MainNavigation = props => {
                     <span />
                 </button>
                 <h1 className="main-navigation__title">
+                
                 <div className = "header-logo">
                     <Link to="/">VOTERS</Link>
                         

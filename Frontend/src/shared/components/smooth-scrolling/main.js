@@ -4,43 +4,32 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Section from "./Section";
 import dummyText from "./DummyText";
-
+import About from './about';
 
 class Main extends Component {
     render() {
       return (
         <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
           <Section
-            title="Section 1"
-            subtitle={dummyText}
+            title="About"
+            subtitle={About}
             dark={true}
             id="section1"
           />
           <Section
-            title="Section 2"
+            title="Faq"
             subtitle={dummyText}
-            dark={false}
+            dark={true}
             id="section2"
           />
           <Section
-            title="Section 3"
+            title="Contact"
             subtitle={dummyText}
             dark={true}
             id="section3"
           />
-          <Section
-            title="Section 4"
-            subtitle={dummyText}
-            dark={false}
-            id="section4"
-          />
-          <Section
-            title="Section 5"
-            subtitle={dummyText}
-            dark={true}
-            id="section5"
-          />
+
         </div>
       );
     }

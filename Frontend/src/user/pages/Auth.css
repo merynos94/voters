@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'WorkSans', sans-serif;
+  
+}
+
+body {
+  background-image: linear-gradient(0deg,
+  rgba(39,70,150,1),
+  rgba(49,84,160,1),
+   rgba(107,166,220,1), 
+   rgba(115,178,229,1));
+  margin: 20;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .authentication__header {
     color: white;
     text-align: center;

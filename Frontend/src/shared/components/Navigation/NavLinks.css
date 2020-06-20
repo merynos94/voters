@@ -51,7 +51,7 @@
   color: white;
 }
 
-@media (min-width: 768x) {
+
   .nav-links {
     flex-direction: row;
   }
@@ -84,4 +84,4 @@
     background: #183072;
     color: white;
   }
-}
+

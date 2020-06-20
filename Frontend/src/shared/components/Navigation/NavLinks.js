@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../context/auth-context';
 // import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import './NavLinks.css';
 
 // export default class Navbar extends Component {
@@ -45,7 +46,7 @@ import './NavLinks.css';
                     )}
                     {auth.isLoggedIn && (
                         <li>
-                            <NavLink to="/places/new"> ADD VOTE </NavLink>
+                            <NavLink to="/poll"> ADD VOTE </NavLink>
                         </li>
                     )}
 

@@ -1,6 +1,9 @@
 :root {
     --off-white: #fafafa;
   }
+  html {
+    font-family: 'Work Sans', sans-serif;
+  }
   .nav {
     background-color: red;
     position: sticky;
