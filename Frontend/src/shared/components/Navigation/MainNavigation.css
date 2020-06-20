@@ -25,24 +25,36 @@
   width: 100%;
   text-align: center;
 }
-.header-logo {
+/* .header-logo {
   display:block;
-  width:506px;
+  width:206px;
   height:119px;
   background:url("./logo.png") no-repeat;
+  background-position: top center;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   margin:0 auto;
-  }
-
+  } */
+.logo{
+  /* position: relative; */
+  display:block;
+  width:220px;
+  height:119px;
+  background:url("./logo.png") no-repeat;
+  background-position: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin:0 auto;
+}
 .main-navigation__title a {
   text-decoration: none;
   color: white;
 }
 
 .main-navigation__header-nav {
-  display: none;
+  display: flex;
 }
 
 .main-navigation__drawer-nav {

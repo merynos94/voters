@@ -28,7 +28,7 @@ const MainNavigation = props => {
             </SideDrawer>
 
             <MainHeader>
-                <Link to="/"><div className = "header-logo"></div></Link>
+                <Link className="logo" to="/"></Link>
                 <nav className="main-navigation__header-nav">
                   <NavLinks />
                 </nav>

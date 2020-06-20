@@ -1,3 +1,7 @@
+/**
+ * 
+ * @param
+ */
 import React, { useState, useCallback} from 'react';
 import {
   BrowserRouter as Router,
@@ -48,18 +52,26 @@ const App = () => {
       {
         isLoggedIn &&
         <Route path="/places/new" exact>
-
         </Route>
       }
+      {
+        isLoggedIn &&
       <Route path="/results">
         <Results />
       </Route>
+       }
+        {
+        isLoggedIn &&
       <Route path="/poll">
         <Poll />
       </Route>
+}
+       {
+        isLoggedIn &&
       <Route path="/open-vote">
         <VoteOpener />
       </Route>
+}
       { isLoggedIn ? <Redirect to="/" /> : <Redirect to="/auth" /> }
     </Switch>
   );
