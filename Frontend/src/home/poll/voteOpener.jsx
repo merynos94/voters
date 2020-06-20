@@ -36,11 +36,27 @@ const VoteOpener = props => {
     return (
       <>
         <h2>Thank you for voting!</h2>
-        <h4>Your vote has been succesfully opened!</h4>
+        <h4>Your vote has been succesfully opfsdfsdfdsfsdened!</h4>
       </>
     )
   }
 
+  if (voteResponse) {
+    return (
+      <>
+        <h2>Thank you for voting!</h2>
+        <h4>Your vote has been succesfully opened!</h4>
+      </>
+    )
+  }
+  if (voteResponse) {
+    return (
+      <>
+        <h2>Thank you for voting!</h2>
+        <h4>Your vote has been succesfully opened!</h4>
+      </>
+    )
+  }
   if (error) {
     return (
       <h2>Something went wrong, refresh the page</h2>
@@ -62,7 +78,5 @@ const VoteOpener = props => {
     </form>
   );
 };
-
-
 //
 export default VoteOpener;
