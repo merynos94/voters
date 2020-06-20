@@ -39,12 +39,6 @@ const VoteOpener = props => {
     )
   }
 
-  console.log("werewreerwerew")
-  console.log("werewreerwerew")
-  console.log("werewreerwerew")
-  console.log("werewreerwerew")
-  console.log("werewreerwerew")
-  console.log("werewreerwerew")
 
   return (
     <form onSubmit={ handleSubmit(formSubmit(setVoteResponse, setError)) }>
