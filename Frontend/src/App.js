@@ -35,6 +35,9 @@ const App = () => {
     setUserId(null);
   }, []);
 
+  let routes;
+
+  if (isLoggedIn) {
   const routes = (
     <Switch>
       <Route path="/" exact>
@@ -43,44 +46,43 @@ const App = () => {
       <Route path="/open-vote" exact>
       <VoteOpener />
       </Route>
-      {
-        !isLoggedIn &&
+     
         <Route path="/auth">
           <Auth />
         </Route>
-      }
-      {
-        isLoggedIn &&
+      
+    
         <Route path="/places/new" exact>
         </Route>
-      }
-      {
-        isLoggedIn &&
+        </Switch>
+        );
+  } else {
+    routes= (
+    <Switch>
       <Route path="/results">
         <Results />
       </Route>
-       }
-        {
-        isLoggedIn &&
+       
+    
       <Route path="/poll">
         <Poll />
       </Route>
-}
-       {
-        isLoggedIn &&
+
       <Route path="/open-vote">
         <VoteOpener />
       </Route>
-}
+
       { isLoggedIn ? <Redirect to="/" /> : <Redirect to="/auth" /> }
     </Switch>
+
   );
+    }
 
   return (
     <AuthContext.Provider
       value={{
-        isLoggedIn: isLoggedIn,
-        userId: userId,
+        
+        
         login: login,
         logout: logout
       }}
