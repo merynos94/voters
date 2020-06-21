@@ -1,3 +1,7 @@
+/**
+ * @class HttpError - Create custom error from library Error.
+ * 
+ */
 class HttpError extends Error {
   constructor(message, errorCode) {
     super(message);

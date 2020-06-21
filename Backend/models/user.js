@@ -1,3 +1,8 @@
+/**
+ * @const {Object} userSchema - Schema how schould create a user.
+ * 
+ */
+
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 const Schema = mongoose.Schema;
