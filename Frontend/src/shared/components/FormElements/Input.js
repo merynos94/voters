@@ -1,3 +1,12 @@
+/**
+ * Input component which we can write text to form.
+ * @constant {Object} Input - Object custom input
+ * @prop {string} label - For descrition input
+ * @prop {string} type - Which type date we want input
+ * Give user optional editing a special style E.g controling size, inverse, danger.
+ * @prop {string} element - we can decide to outside which kind of element we can render
+
+ */
 import React, { useReducer, useEffect } from 'react';
 
 import { validate } from '../../util/validators';

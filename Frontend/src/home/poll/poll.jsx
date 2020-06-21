@@ -45,7 +45,7 @@ const Poll = props => {
   if (pollResponse) {
     return (
       <>
-        <h2>Thank you for voting!</h2>
+        <h2 style={{ "margin-top": "150px" }}>Thank you for voting!</h2>
         {
           _.map(
             pollResponse,
@@ -60,12 +60,12 @@ const Poll = props => {
 
   if (error) {
     return (
-      <h2>Something went wrong, refresh the page</h2>
+      <h2 style={{ "margin-top": "150px" }}>Something went wrong, refresh the page</h2>
     )
   }
 
   return (
-    <form onSubmit={ handleSubmit(formSubmit(setPollResponse)) }>
+    <form onSubmit={ handleSubmit(formSubmit(setPollResponse)) } style={{ "margin-top": "150px" }}>
       { _.map(candidates, candidate => candidateInput(candidate , register)) }
       <p>
         <input ref={ register } type="text" id="voterId" name="voterId" />

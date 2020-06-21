@@ -6,8 +6,14 @@ const formSubmit = (succesCallback, errorCallback) => async (data) => {
   const body = JSON.stringify({ data: { key: data.key, iv: data.iv } });
   const fetchParams = { method: 'POST', headers: { 'Content-Type': 'application/json' }, body }
 
-  fetch(OPEN_VOTE_URI('0d41ba33-577c-4b98-981b-0ad4cadc593c'), fetchParams)
-    .then(res => res.json())
+  fetch(OPEN_VOTE_URI(data.index), fetchParams)
+    .then(res => {
+      if (res.ok) {
+        return res.json();
+      } else {
+        throw new Error('something went wrong')
+      }
+    })
     .then(res => {
       succesCallback(true)
       console.log("YAS YAS YAS! ", res);
@@ -27,7 +33,7 @@ const VoteOpener = props => {
   if (voteResponse) {
     return (
       <>
-        <h2>Thank you for voting!</h2>
+        <h2 style={{ "margin-top": "150px" }}>Thank you for voting!</h2>
         <h4>Your vote has been succesfully opened!</h4>
       </>
     )
@@ -35,13 +41,16 @@ const VoteOpener = props => {
 
   if (error) {
     return (
-      <h2>Something went wrong, refresh the page</h2>
+      <h2 style={{ "margin-top": "150px" }}>Something went wrong, refresh the page</h2>
     )
   }
 
-
   return (
-    <form onSubmit={ handleSubmit(formSubmit(setVoteResponse, setError)) }>
+    <form onSubmit={ handleSubmit(formSubmit(setVoteResponse, setError)) } style={{ "margin-top": "150px" }}>
+      <p>
+        <input ref={ register } type="text" id="index" name="index" />
+        <label htmlFor="index">Your vote index</label>
+      </p>
       <p>
         <input ref={ register } type="text" id="key" name="key" />
         <label htmlFor="key">Your private key</label>
@@ -55,7 +64,5 @@ const VoteOpener = props => {
     </form>
   );
 };
-
-
 //
 export default VoteOpener;

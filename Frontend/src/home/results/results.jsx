@@ -9,7 +9,13 @@ const ResultsList = props => {
   useEffect(
     () => {
       fetch(RESULTS_URI)
-        .then(res => res.json())
+        .then(res => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            throw new Error('something went wrong')
+          }
+        })
         .then(res => setResults(res))
         .catch(err => setError(true))
     },
@@ -17,10 +23,10 @@ const ResultsList = props => {
   )
 
   if (error) {
-    return <h2>Lista wyników jest niedostępna</h2>
+    return <h2 style={{ "margin-top": "150px" }}>Lista wyników jest niedostępna</h2>
   }
   return (
-    <ul className="results-list">
+    <ul className="results-list" style={{ "margin-top": "150px" }}>
       {
         _.map(
           results,

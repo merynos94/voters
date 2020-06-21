@@ -1,3 +1,7 @@
+/**
+ *
+ * @param
+ */
 import React, { useState, useCallback} from 'react';
 import {
   BrowserRouter as Router,
@@ -7,15 +11,15 @@ import {
 } from 'react-router-dom';
 
 import Users from './user/pages/Users';
-import NewPlace from './places/pages/NewPlace';
-import UserPlaces from './places/pages/UserPlaces';
 import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 import Results from './home/results/results';
 import Poll from './home/poll/poll';
-import Main from './shared/components/smooth-scrolling/main';
+import Main from './shared/components/main-page/main';
 import VoteOpener from './home/poll/voteOpener';
+import VotesList from './home/poll/votesList';
+import VoterList from './home/poll/voterList';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -36,9 +40,16 @@ const App = () => {
       <Route path="/" exact>
         { isLoggedIn ? <Users /> : <Main /> }
       </Route>
-      <Route path="/:userId/places" exact>
-        <UserPlaces />
+      <Route path="/open-vote" exact>
+      <VoteOpener />
       </Route>
+      <Route path="/votes" exact>
+        <VotesList />
+      </Route>
+      <Route path="/voters" exact>
+        <VoterList />
+      </Route>
+
       {
         !isLoggedIn &&
         <Route path="/auth">
@@ -48,18 +59,26 @@ const App = () => {
       {
         isLoggedIn &&
         <Route path="/places/new" exact>
-          <NewPlace />
         </Route>
       }
+      {
+        isLoggedIn &&
       <Route path="/results">
         <Results />
       </Route>
+       }
+      {
+        isLoggedIn &&
       <Route path="/poll">
         <Poll />
       </Route>
+      }
+      {
+        isLoggedIn &&
       <Route path="/open-vote">
         <VoteOpener />
       </Route>
+      }
       { isLoggedIn ? <Redirect to="/" /> : <Redirect to="/auth" /> }
     </Switch>
   );

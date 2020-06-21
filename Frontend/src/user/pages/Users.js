@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import UsersList from '../components/UsersList';
+// import UsersList from '../components/UsersList';
 import ErrorModal from '../../shared/components/UIElements/ErrorModal';
 import LoadingSpinner from '../../shared/components/UIElements/LoadingSpinner';
 import { useHttpClient } from '../../shared/hooks/http-hook';
@@ -30,7 +30,7 @@ const Users = () => {
           <LoadingSpinner />
         </div>
       )}
-      {!isLoading && loadedUsers && <UsersList items={loadedUsers} />}
+      {/* {!isLoading && loadedUsers && <UsersList items={loadedUsers} />} */}
     </React.Fragment>
   );
 };
