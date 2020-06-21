@@ -52,8 +52,7 @@ const App = () => {
         </Route>
       
     
-        <Route path="/places/new" exact>
-        </Route>
+       
         </Switch>
         );
   } else {
