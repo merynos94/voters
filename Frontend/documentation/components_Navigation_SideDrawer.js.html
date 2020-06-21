@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Navigation/SideDrawer.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,45 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Navigation/SideDrawer.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * SideDraw - Add animaton (slide in. slide out)
+ * @constant {Object} SideDrawer - Main class 
+ * @param {Object}  content - content to render
+ * @param {String} document - where content schould be render
+ */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { CSSTransition } from 'react-transition-group';
 
+import './SideDrawer.css';
 
-    <h3> </h3>
+const SideDrawer = props => {
+    const content = (
+        &lt;CSSTransition 
+        in={props.show} 
+        timeout={200} 
+        classNames="slide-in-left" 
+        mountOnEnter 
+        unmountOnExit>
+            &lt;aside className="side-drawer" onClick={props.onClick}>{props.children}&lt;/aside>
+        &lt;/CSSTransition>
+    );
+    return ReactDOM.createPortal(content, document.getElementById('drawer-hook'));
 
+};
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default SideDrawer;</code></pre>
+        </article>
+    </section>
 
 
 

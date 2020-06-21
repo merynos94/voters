@@ -1,3 +1,7 @@
+/**
+ * Card place which my can put on the stylish div. 
+ * @constant {Object} Card - class Card.
+ */
 import React from 'react';
 
 import './Card.css';

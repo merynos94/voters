@@ -1,3 +1,8 @@
+/**
+ * Error modal show diffrent error, when we put inncorect data.  
+ * @constant {Object} ErrorModal - basic class.
+ */
+
 import React from 'react';
 
 import Modal from './Modal';

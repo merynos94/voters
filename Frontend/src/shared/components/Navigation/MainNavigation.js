@@ -1,9 +1,8 @@
 /**
  * MainNavigation keept "Hamburger menu" button which is on the left. and logo on the top 
  * @constant {Object} MainNavigation - class MainNavigation
- * @constant {boolean} drawerIsOpen - open/close navigation menu
+ * @param {boolean} drawerIsOpen - open/close navigation menu
  * @returns {Object} Link which is a logo on the top.
-
  */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';

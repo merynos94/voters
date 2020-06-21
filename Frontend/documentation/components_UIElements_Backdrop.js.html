@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/UIElements/Backdrop.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,35 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/UIElements/Backdrop.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * BackDrop is use for show left hamburger Menu on the page, thanks for Portal, we can show menu synchronize from main page.
+ * @constant {Object} Backdrop - class Backdrop
+ */
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+import './Backdrop.css';
 
-    <h3> </h3>
+const Backdrop = props => {
+  return ReactDOM.createPortal(
+    &lt;div className="backdrop" onClick={props.onClick}>&lt;/div>,
+    document.getElementById('backdrop-hook')
+  );
+};
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Backdrop;
+</code></pre>
+        </article>
+    </section>
 
 
 
