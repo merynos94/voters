@@ -1,3 +1,14 @@
+/**
+ * Button Component which user can control.
+ * @constant {Object} Button - Object custom button 
+ * @prop {string} href - Render a normal link
+ * @prop {string} to - Render a link comming from React-router-dom. 
+ * Give user optional editing a special style E.g controling size, inverse, danger.
+ * @returns {Object} - Return a custom button.
+ * @prop {string} type - control a type
+ * @prop {string} onClick - forward onclick
+ * @prop {string} disabled - disabled button
+ */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
