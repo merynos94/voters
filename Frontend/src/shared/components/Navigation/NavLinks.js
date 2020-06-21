@@ -1,3 +1,9 @@
+/**
+ * Navlinks - Which Link schould be show users before or after login in.
+ * @constant {Object} Navlinks 
+ * @param {boolean} drawerIsOpen - open/close navigation menu
+ * @returns {Object} Link which is a logo on the top.
+ */
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../context/auth-context';

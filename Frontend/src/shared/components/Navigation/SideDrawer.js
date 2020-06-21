@@ -1,3 +1,9 @@
+/**
+ * SideDraw - Add animaton (slide in. slide out)
+ * @constant {Object} SideDrawer - Main class 
+ * @param {Object}  content - content to render
+ * @param {String} document - where content schould be render
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';

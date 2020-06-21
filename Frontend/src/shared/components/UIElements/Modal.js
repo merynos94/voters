@@ -1,3 +1,7 @@
+/**
+ * Modal is a overlay on website. It's basicly like a pop-up but build in to the  page. We can display anything indeed create a useful any kind of content.
+ * @constant {Object} Modal - Basic class.
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
