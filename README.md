@@ -23,7 +23,7 @@ The project implements the structure of an online voting scheme proposed by Fuji
 The encryption and key generation is mostly done by good old [OpenSSL](https://ruby.github.io/openssl/) with a slight twist on blinding which had to be custom made as `OpenSSL` doesn't support it out of the box.
 
 #### How to build
-Each project is to be built on it's own. You can find the steps inside particular project `README` (https://github.com/beniutek/online_voting/blob/master/README.md).
+Each project is to be built on it's own. You can find the steps inside particular project `README` [Online Voting Readme](https://github.com/beniutek/online_voting/blob/master/README.md).
 
 
 #### Code documentation:
