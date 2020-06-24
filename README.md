@@ -27,8 +27,8 @@ Each project is to be built on it's own. You can find the steps inside particula
 
 
 #### Code documentation:
-* [Voter Backend Documentation](voters/Backend/documentation/index.html)
-* [Voter Frontend Documentation](voters/Frontend/documentation/index.html)
+* [Voter Backend Documentation](https://github.com/merynos94/voters/blob/master/Backend/documentation/index.html)
+* [Voter Frontend Documentation](https://github.com/merynos94/voters/blob/master/Frontend/documentation/index.html)
 
 
 **Author**: merynos94
