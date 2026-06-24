@@ -10,20 +10,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.18.1",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.3",
     "mongodb": "^3.5.9",
-    "mongoose": "^5.9.19",
-    "mongoose-unique-validator": "^2.0.3",
-    "uuid": "^3.3.3"
+    "mongoose": "^9.7.2",
+    "mongoose-unique-validator": "^6.1.1",
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
-    "jsdoc": "^3.6.4",
-    "nodemon": "^1.19.4"
+    "jsdoc": "^4.0.5",
+    "nodemon": "^3.1.14"
   }
 }
